@@ -80,6 +80,18 @@ ul {
   float: left;
 }
 
+.right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .w50 {
   width: 50%;
 }
@@ -90,12 +102,16 @@ ul {
 
 .navigator {
   width: 100%;
-  text-align: right;
+  /* text-align: right; */
   padding: 20px 4%;
   background-color: #B8B42D;
   position: fixed;
   top: 0;
   box-shadow: 0px 1px 7px 2px rgba(0,0,0,0.7);
+}
+
+.navigator li {
+  display: inline-block;
 }
 
 .hero {
