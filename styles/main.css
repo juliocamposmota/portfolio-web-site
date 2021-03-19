@@ -11,8 +11,6 @@ html, body{
 
 body {
   background-color: #bbb592;
-  text-align: center;
-  margin: 0;
 }
 
 a {
@@ -22,6 +20,10 @@ a {
   text-decoration: none;
   letter-spacing: 0.5px;
   margin-right: 30px;
+}
+
+h1, h2 {
+  text-align: center;
 }
 
 h1 {
@@ -53,6 +55,11 @@ ul {
   list-style: none;
 }
 
+footer {
+  padding: 60px;
+  text-align: right;
+}
+
 #sobre, #habilidades {
   padding: 40px 0;
 }
@@ -65,9 +72,14 @@ ul {
   text-align: justify;
 }
 
+#sobre a {
+  text-align: center;
+}
+
 #habilidades ol, #habilidades ul {
   font-size: 22px;
   line-height: 30px;
+  text-align: center;
 }
 
 .center {
@@ -76,29 +88,12 @@ ul {
   margin-right: auto;
 }
 
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.w50 {
-  width: 50%;
-}
-
-.clear {
-  clear: both;
-}
+.left { float: left; }
+.right { float: right; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.w50 { width: 50%; }
+.clear { clear: both; }
 
 .navigator {
   width: 100%;
@@ -141,7 +136,7 @@ ul {
 }
 
 .botao a {
-  margin: 0;
+  margin-left: 4px;
   position:relative;
   top: 35%;
 }
@@ -151,5 +146,27 @@ ul {
 }
 
 .about-description {
-  padding: 40px 180px 40px 0;
+  padding: 40px 60px;
+}
+
+.single-portfolio-wrapper {
+  padding: 0 60px;
+}
+
+.single-portfolio {
+  display: inline-block;
+  width: 25%;
+  margin-right: 20px;
+}
+
+.single-portfolio img {
+  width: 100%;
+}
+
+.single-portfolio a {
+  margin: 0;
+}
+
+.single-portfolio p {
+  margin-top: 15px;
 }
