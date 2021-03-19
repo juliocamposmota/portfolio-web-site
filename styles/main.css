@@ -53,7 +53,7 @@ ul {
   list-style: none;
 }
 
-#sobre {
+#sobre, #habilidades {
   padding: 40px 0;
 }
 
@@ -63,6 +63,11 @@ ul {
 
 #sobre p {
   text-align: justify;
+}
+
+#habilidades ol, #habilidades ul {
+  font-size: 22px;
+  line-height: 30px;
 }
 
 .center {
