@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
+  
   <title>JM WebDev</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -11,24 +12,22 @@
 
 <body>
   <header>
-    <nav class="navigator">
-      <div class="w50 left text-letft">
-        <ul>
-          <li><a href="https://github.com/juliocamposmota" target="_blank">GitHub</a></li>
-          <li><a href="https://www.behance.net/juliomotacampos" target="_blank">Behance</a></li>
-          <li><a href="https://www.linkedin.com/in/juliomotacampos/" target="_blank">LinkedIn</a></li>
-        </ul>
-      </div>
-  
-      <div class="w50 right text-right">
-        <a href="#">Home</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#portfolio">Portfólio</a>
-      </div>
+    <nav>
+      <ul class="w50 left text-letft">
+        <li><a href="https://github.com/juliocamposmota" target="_blank">GitHub</a></li>
+        <li><a href="https://www.behance.net/juliomotacampos" target="_blank">Behance</a></li>
+        <li><a href="https://www.linkedin.com/in/juliomotacampos/" target="_blank">LinkedIn</a></li>
+      </ul>
+
+      <ul class="w50 right text-right">
+        <li><a href="#">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+      </ul>
     </nav>
     
-    <section class="hero">
+    <section class="hero-stage">
       <h1>Júlio Mota Campos</h1>      
       <h2>Desenvolvedor Web</h2>
   
@@ -48,54 +47,56 @@
       </div>
   
       <div class="right w50">
-        <img class="about-img center" src="images/2019-Perfil.png" alt="Foto do Júlio tirada no SESC Av. Paulista.">
-        <a class="center" href="images/2019-Perfil.png">Clique para ampliar a foto</a>
+        <img class="center" src="images/2019-Perfil.png" alt="Foto do Júlio tirada no SESC Av. Paulista.">
+        <a class="center" href="images/2019-Perfil.png">Clique <strong>aqui</strong> para ampliar a foto</a>
       </div>
   
       <div class="clear"></div>
     </section>
     
     <section id="habilidades">
-      <div class="left w50">
-        <h2>Hard Skills</h2>
-        <ol>
-          <li><strong>Desenvolvimento Front-End</strong></li>
-          <li>Desenvolvimento Back-End</li>
-          <li>Mapeamento de processos</li>
-          <li><strong>Gestão de Projetos</strong></li>
-          <li>Gestão de Contratos</li>
-        </ol>
+      <div class="skills">
+        <div class="left w50">
+          <h2>Hard Skills</h2>
+          <ol>
+            <li><strong>Desenvolvimento Front-End</strong></li>
+            <li>Desenvolvimento Back-End</li>
+            <li>Mapeamento de processos</li>
+            <li><strong>Gestão de Projetos</strong></li>
+            <li>Gestão de Contratos</li>
+          </ol>
+        </div>
+    
+        <div class="right w50">
+          <h2>Soft Skills</h2>
+          <ol>
+            <li>Inteligência Emocional</li>
+            <li>Comunicação</li>
+            <li>Colaboração</li>
+            <li><strong>Pensamento Crítico</strong></li>
+            <li><strong>Criatividade</strong></li>
+            <li>Liderança</li>
+          </ol>
+        </div>
+    
+        <div class="clear"></div>
       </div>
-  
-      <div class="left w50">
-        <h2>Soft Skills</h2>
-        <ol>
-          <li>Inteligência Emocional</li>
-          <li>Comunicação</li>
-          <li>Colaboração</li>
-          <li><strong>Pensamento Crítico</strong></li>
-          <li><strong>Criatividade</strong></li>
-          <li>Liderança</li>
-        </ol>
-      </div>
-  
-      <div class="clear"></div>
     </section>
     
-    <section>
-      <h2 id="portfolio">Portfólio</h2>
+    <section id="portfolio">
+      <h2>Portfólio</h2>
   
       <div class="single-portfolio-wrapper">
         <div class="single-portfolio">
-          <img src="images/portfolio2.png" alt="proffy">
+          <img src="images/portfolio1.png" alt="proffy">
           <a href="https://github.com/juliocamposmota/Proffy" target="_blank">NLW #2 - Discovery - Proffy</a>
-          <p>Projeto desenvolvido durante evento Next Level Week #2 Trilha Discovery.</p>
+          <p>Projeto desenvolvido durante o evento NLW #2 Trilha Discovery.</p>
         </div>
     
         <div class="single-portfolio">
-          <img src="images/portfolio1.PNG" alt="happy">
+          <img src="images/portfolio2.png" alt="happy">
           <a href="https://github.com/juliocamposmota/PrevisaoDoTempo" target="_blank">NLW #3 - Omnistack - Happy</a>
-          <p>Projeto desenvolvido durante o evento Next Level Week #3 Trilha Omnistack.</p>
+          <p>Projeto desenvolvido durante o evento NLW #3 Trilha Omnistack.</p>
         </div>
       </div>
     </section>
