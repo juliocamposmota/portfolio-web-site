@@ -111,7 +111,9 @@ colorPalette.addEventListener('click', selectColor);
 function paintPixel(event) {
   const element = event.target;
 
-  if (element.className === 'pixel') {
+  if (element.style.backgroundColor !== 'white') {
+    element.style.backgroundColor = 'white';
+  } else if (element.className === 'pixel') {
     const selected = document.querySelector('.selected');
     const color = selected.style.backgroundColor;
     element.style.backgroundColor = color;
