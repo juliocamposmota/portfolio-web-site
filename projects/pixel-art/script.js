@@ -135,6 +135,7 @@ function clearBoard() {
 clearButton.addEventListener('click', clearBoard);
 
 const pixelBorderToggle = document.querySelector('#pixel-border');
+const darkModeToggle = document.querySelector('#dark-mode');
 
 function pixelBorder() {
   const pixels = document.querySelectorAll('.pixel');
@@ -152,3 +153,29 @@ function pixelBorder() {
 }
 
 pixelBorderToggle.addEventListener('change', pixelBorder);
+
+function darkMode() {
+  let checked = darkModeToggle.checked;
+
+  if (checked) {
+    document.body.className = 'dark-mode-background';
+    document.querySelector('#title').className = 'dark-mode-color';
+    document.querySelector('footer').className = 'dark-mode-color';
+  
+    let labels = document.querySelectorAll('label');
+    for (let label of labels) {
+      label.className = 'dark-mode-color';
+    }
+  } else {
+    document.body.classList.remove('dark-mode-background');
+    document.querySelector('#title').classList.remove('dark-mode-color');
+    document.querySelector('footer').classList.remove('dark-mode-color');
+  
+    let labels = document.querySelectorAll('label');
+    for (let label of labels) {
+      label.classList.remove('dark-mode-color');
+    }
+  }
+}
+
+darkModeToggle.addEventListener('change', darkMode);

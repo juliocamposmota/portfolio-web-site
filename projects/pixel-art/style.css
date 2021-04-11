@@ -5,6 +5,14 @@ body {
   align-self: center;
 }
 
+.dark-mode-background {
+  background-color: rgb(35, 32, 54);
+}
+
+.dark-mode-color {
+  color: #fff;
+}
+
 main {
   display: flex;
   flex-direction: column;
