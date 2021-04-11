@@ -9,9 +9,11 @@
 </head>
 
 <body>
-  <div class="center">
+  <header>
     <h1 id="title">Paleta de Cores</h1>
-  
+  </header>
+
+  <main>
     <ul id="color-palette"></ul>
   
     <section class="generate-container">
@@ -19,10 +21,23 @@
       <button id="generate-board">VQV</button>
     </section>
 
+    <aside>
+      <section class="toogle-container">
+        <input id="dark-mode" type="checkbox" value="Dark Mode" name="dark-mode">
+        <label for="dark-mode"> Dark Mode</label><br>
+        <input id="pixel-border" type="checkbox" value="Pixel Border" name="pixel-border" >
+        <label for="pixel-border"> Pixel Border</label>
+      </section>
+    </aside>
+
     <button id="clear-board">Limpar</button>
   
     <section id="pixel-board"></section>
-  </div>
+  </main>
+
+  <footer>
+    <p>Created by Júlio Mota Campos</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

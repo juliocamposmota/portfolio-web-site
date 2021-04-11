@@ -133,3 +133,22 @@ function clearBoard() {
 }
 
 clearButton.addEventListener('click', clearBoard);
+
+const pixelBorderToggle = document.querySelector('#pixel-border');
+
+function pixelBorder() {
+  const pixels = document.querySelectorAll('.pixel');
+  let checked = pixelBorderToggle.checked;
+
+  if (checked) {
+    for (let pixel of pixels) {
+      pixel.style.border = 'none';
+    }
+  } else {
+    for (let pixel of pixels) {
+      pixel.style.border = '1px solid rgb(105, 105, 105)';
+    }
+  }
+}
+
+pixelBorderToggle.addEventListener('change', pixelBorder);
