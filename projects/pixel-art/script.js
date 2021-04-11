@@ -111,7 +111,9 @@ colorPalette.addEventListener('click', selectColor);
 function paintPixel(event) {
   const element = event.target;
 
-  if (element.className === 'pixel') {
+  if (element.style.backgroundColor !== 'white') {
+    element.style.backgroundColor = 'white';
+  } else if (element.className === 'pixel') {
     const selected = document.querySelector('.selected');
     const color = selected.style.backgroundColor;
     element.style.backgroundColor = color;
@@ -131,3 +133,49 @@ function clearBoard() {
 }
 
 clearButton.addEventListener('click', clearBoard);
+
+const pixelBorderToggle = document.querySelector('#pixel-border');
+const darkModeToggle = document.querySelector('#dark-mode');
+
+function pixelBorder() {
+  const pixels = document.querySelectorAll('.pixel');
+  let checked = pixelBorderToggle.checked;
+
+  if (checked) {
+    for (let pixel of pixels) {
+      pixel.style.border = 'none';
+    }
+  } else {
+    for (let pixel of pixels) {
+      pixel.style.border = '1px solid rgb(105, 105, 105)';
+    }
+  }
+}
+
+pixelBorderToggle.addEventListener('change', pixelBorder);
+
+function darkMode() {
+  let checked = darkModeToggle.checked;
+
+  if (checked) {
+    document.body.className = 'dark-mode-background';
+    document.querySelector('#title').className = 'dark-mode-color';
+    document.querySelector('footer').className = 'dark-mode-color';
+  
+    let labels = document.querySelectorAll('label');
+    for (let label of labels) {
+      label.className = 'dark-mode-color';
+    }
+  } else {
+    document.body.classList.remove('dark-mode-background');
+    document.querySelector('#title').classList.remove('dark-mode-color');
+    document.querySelector('footer').classList.remove('dark-mode-color');
+  
+    let labels = document.querySelectorAll('label');
+    for (let label of labels) {
+      label.classList.remove('dark-mode-color');
+    }
+  }
+}
+
+darkModeToggle.addEventListener('change', darkMode);
