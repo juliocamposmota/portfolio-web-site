@@ -179,3 +179,17 @@ function darkMode() {
 }
 
 darkModeToggle.addEventListener('change', darkMode);
+
+let pixelSizeRange = document.querySelector('#pixel-size');
+
+function changePixelSize() {
+  let pixels = document.querySelectorAll('.pixel');
+  let pixelSize = pixelSizeRange.value;
+
+  for (let index = 0; index < pixels.length; index += 1) {
+    pixels[index].style.width = `${pixelSize}px`;
+    pixels[index].style.height = `${pixelSize}px`;
+  }
+}
+
+pixelSizeRange.addEventListener('input', changePixelSize);
