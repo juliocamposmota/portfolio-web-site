@@ -1,16 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: center;
+  background-image: url(./images/background-LightMode.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 .dark-mode-background {
   background-color: rgb(35, 32, 54);
+  background-image: url(./images/background-DarkMode.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .dark-mode-color {
   color: #fff;
+}
+
+header {
+  padding: 15px 0;
 }
 
 main {
@@ -18,6 +36,10 @@ main {
   flex-direction: column;
   align-items: center;
   align-self: center;
+}
+
+footer {
+  padding: 15px 0;
 }
 
 footer p{
@@ -42,7 +64,6 @@ li {
 }
 
 #pixel-board {
-  margin-top: 15px;
   display: table;
 }
 
@@ -58,9 +79,9 @@ li {
 }
 
 .generate-container {
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 
 #clear-board {
-  margin-top: 15px;
+  margin: 15px 0;
 }
