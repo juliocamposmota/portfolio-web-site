@@ -36,7 +36,7 @@ function createColorPalette(paletteSize) {
   }
 }
 
-createColorPalette(4);
+createColorPalette(6);
 
 const pixelBoard = document.querySelector('#pixel-board');
 const boardSizeInput = document.querySelector('#board-size');
@@ -88,6 +88,17 @@ function iniciateColorPalette() {
 }
 
 iniciateColorPalette();
+
+const newPaletteButton = document.querySelector('#new-palette');
+
+newPaletteButton.addEventListener('click', function() {
+  for (let index = colorPalette.children.length - 1; index >= 0; index -= 1) {
+    colorPalette.children[index].remove();
+  }
+
+  createColorPalette(6);
+  iniciateColorPalette();
+});
 
 function removeSelected() {
   for (let index = 0; index < paletteColors.length; index += 1) {
