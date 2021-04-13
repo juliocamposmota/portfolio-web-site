@@ -4,18 +4,24 @@ const listaTarefas = document.querySelector('#lista-tarefas');
 const tarefas = listaTarefas.children;
 
 function addTarefaClick() {
-  const tarefa = document.createElement('li');
-
-  tarefa.innerText = textoTarefa.value;
-  tarefa.className = 'tarefa';
-  listaTarefas.appendChild(tarefa);
-
-  textoTarefa.value = '';
-  textoTarefa.focus();
+  if (textoTarefa.value === '') {
+    alert('Você não escreveu uma tarefa.');
+  } else {
+    const tarefa = document.createElement('li');
+  
+    tarefa.innerText = textoTarefa.value;
+    tarefa.className = 'tarefa';
+    listaTarefas.appendChild(tarefa);
+  
+    textoTarefa.value = '';
+    textoTarefa.focus();
+  }
 }
 
 function addTarefaKeypress(event) {
-  if (event.keyCode === 13) {
+  if (textoTarefa.value === '') {
+    alert('Você não escreveu uma tarefa.');
+  } else if (event.keyCode === 13) {
     const tarefa = document.createElement('li');
 
     tarefa.innerText = textoTarefa.value;
