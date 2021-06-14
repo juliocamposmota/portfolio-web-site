@@ -17,22 +17,38 @@
   </header>
 
   <main>
-    <section class="texto-tarefa-container">
-      <input id="texto-tarefa" placeholder="Tarefa" type="text">
-      <button id="criar-tarefa">Adicionar</button>
-    </section>
+    <div>
+      <section class="texto-tarefa-container">
+        <input id="texto-tarefa" placeholder="Tarefa" type="text">
+        <button id="criar-tarefa">Adicionar</button>
+      </section>
+  
+      <section class="lista-tarefas-container">
+        <ol id="lista-tarefas"></ol>
+      </section>
+  
+      <section class="options-contanier">
+        <button id="remover-selecionado">Apagar</button>
+        <button id="mover-cima">up</button>
+        <button id="mover-baixo">down</button>
+        <button id="apaga-tudo">Apagar tudo</button>
+        <button id="remover-finalizados">Apagar finalizados</button>
+        <button id="salvar-tarefas">Salvar lista</button>
+      </section>
+    </div>
 
-    <section class="lista-tarefas-container">
-      <ol id="lista-tarefas"></ol>
-    </section>
+    <section>
+      <h2>Tarefas salvas</h2>
 
-    <section class="options-contanier">
-      <button id="remover-selecionado">Apagar</button>
-      <button id="mover-cima">up</button>
-      <button id="mover-baixo">down</button>
-      <button id="apaga-tudo">Apagar tudo</button>
-      <button id="remover-finalizados">Apagar finalizados</button>
-      <button id="salvar-tarefas">Salvar lista</button>
+      <div id="tarefas-salvas-container">
+        <div class="tarefa-salva"></div>
+        <div class="tarefa-salva"></div>
+        <div class="tarefa-salva"></div>
+        <div class="tarefa-salva"></div>
+        <div class="tarefa-salva"></div>
+        <div class="tarefa-salva"></div>
+        <div class="tarefa-salva"></div>
+      </div>
     </section>
   </main>
 
